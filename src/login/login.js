@@ -3,8 +3,16 @@ import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {FontAwesome} from '@expo/vector-icons';
 
 const LoginScreen =()=>{
-    const [username, setUsername] = useState();
-    const [password, setPassword] = useState();
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleLogin = ()=>{
+        if (username == "" ||  password == ""){
+            alert("Kindly fill all fields")
+        }else{
+            alert("Success!")
+        }
+    }
     return(
         <View style={{padding:20, flex:1, backgroundColor:"white"}}>
             <View style={{padding:20, paddingTop:100}}>
@@ -33,7 +41,7 @@ const LoginScreen =()=>{
                 </View>
             </View>
 
-            <TouchableOpacity style={{marginTop:40, width:330, height:50, backgroundColor:"#77A7A7", justifyContent:"center", alignItems:"center",  borderRadius:10}}>
+            <TouchableOpacity style={{marginTop:40, width:330, height:50, backgroundColor:"#77A7A7", justifyContent:"center", alignItems:"center",  borderRadius:10}} onPress={()=>handleLogin()}>
                 <Text style={{fontSize:20, fontWeight:"bold"}}>LOG IN</Text>
             </TouchableOpacity>
 
