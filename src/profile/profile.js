@@ -5,29 +5,39 @@ import {Feather} from '@expo/vector-icons';
 const ProfileScreen =()=>{
     return(
         <View style={{padding:20}}>
-          <View style={{flexDirection:"row", paddingTop:40}}>
-              <View style={{}}>
-                  <Image source={require('../../assets/pic.jpeg')} style={{width:100, height:100, borderRadius:50}}/>
+              <View style={{ justifyContent:"center", alignItems:"center", paddingTop:50}}>
+                  <Image source={require('../../assets/pic.jpeg')} style={{width:120, height:120, borderRadius:50}}/>
               </View>
-             <View style={{paddingTop:20, paddingLeft:20}}>
-             <Text style={{fontSize:20, fontWeight:"bold"}}>Audrey Z</Text>
-             <View style={{flexDirection:"row"}}>
-             <View style={{paddingTop:10}}>
-                  <Text style={{fontSize:20, fontWeight:"bold"}}>120</Text>
-                  <Text style={{fontSize:20}}>Followers</Text>
-              </View>
-              <View style={{paddingTop:10, paddingLeft:30}}>
-                  <Text style={{fontSize:20, fontWeight:"bold"}}>100</Text>
-                  <Text style={{fontSize:20}}>Following</Text>
-              </View>
-             </View>
-             </View>     
+          
+
+         <View style={{marginTop:30, height:40, flexDirection:"row", justifyContent:"space-evenly" }}>
+         <View >
+         <Text style={{fontSize:20}}>Followers</Text>
+         </View>
+         <View >
+         <Text style={{fontSize:20}}>Following</Text>
+         </View>      
          </View>
 
-         <View>
-             {/* <Feather */}
+      <View style={{justifyContent:"space-evenly", flexDirection:"row"}}>
+          <View>
+              <Text style={{fontWeight:"bold", fontSize:20}}>990</Text>
+          </View>
+          <View>
+              <Text style={{fontWeight:"bold", fontSize:20}}>90</Text>
+          </View>
+      </View>
 
-         </View>
+      
+
+
+
+
+
+
+
+
+
         </View>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
-import {FontAwesome} from '@expo/vector-icons';
+import {FontAwesome, Feather} from '@expo/vector-icons';
 
 const LoginScreen =()=>{
     const [username, setUsername] = useState("");
@@ -15,14 +15,14 @@ const LoginScreen =()=>{
     }
     return(
         <View style={{padding:20, flex:1, backgroundColor:"white"}}>
-            <View style={{padding:20, paddingTop:100}}>
+            <View style={{padding:20, paddingTop:160}}>
               <Text style={{fontSize:40, fontWeight:"bold"}}>Lets sign you in.</Text>
               <Text style={{fontSize:30}}>Welcome back.</Text>
               <Text style={{fontSize:30}}>You've been missed!</Text>
             </View>
 
             <View>
-                <View style={{ borderRadius:10, borderWidth:1, padding:16, height:50, marginTop:30, borderColor:"black"}}>
+                <View style={{ borderBottomWidth:1, padding:16, height:50, marginTop:70, borderColor:"black"}}>
                     <TextInput
                     placeholder="Username"
                     onChange={(e)=>setUsername(e)}
@@ -31,7 +31,7 @@ const LoginScreen =()=>{
                     />
                 </View>
 
-                <View style={{ borderRadius:10, borderWidth:1, padding:16, height:50, marginTop:30, borderColor:"black"}}>
+                <View style={{ borderBottomWidth:1, padding:16, height:50, marginTop:30, borderColor:"black"}}>
                     <TextInput
                     placeholder="Password"
                     onChange={(e)=>setPassword(e)}
@@ -41,37 +41,29 @@ const LoginScreen =()=>{
                 </View>
             </View>
 
-            <TouchableOpacity style={{marginTop:40, width:330, height:50, backgroundColor:"#77A7A7", justifyContent:"center", alignItems:"center",  borderRadius:10}} onPress={()=>handleLogin()}>
+            <TouchableOpacity style={{marginTop:40, width:130, height:50, backgroundColor:"#77A7A7", justifyContent:"center", alignItems:"center",  borderRadius:10, marginLeft:100}} onPress={()=>handleLogin()}>
                 <Text style={{fontSize:20, fontWeight:"bold"}}>LOG IN</Text>
             </TouchableOpacity>
 
-            <View style={{paddingTop:30, fontSize:20}}>
-                <Text>Don't have an account? <Text style={{color:"#77A7A7", fontWeight:"bold"}}>Sign up</Text></Text>
+            <View style={{paddingTop:50, fontSize:20}}>
+                <Text>Don't have an account?</Text>
             </View>
 
-            <TouchableOpacity style={{marginTop:40, width:330, height:50, alignItems:"center",  justifyContent:"center",borderRadius:10, flexDirection:"row",backgroundColor:"#77A7A7"}}>
-                <View style={{paddingRight:10}}>
-                    <FontAwesome
-                    name="google"
-                    size={24}
-                    color="black"/>
-                </View>
-                <View >
-                <Text style={{fontSize:20, fontWeight:"bold"}}>Login with Google </Text>
-                </View>
-            </TouchableOpacity>
+            <View style={{paddingTop:20, flexDirection:"row"}}>
+            <View style={{paddingTop:2}}>
+            <Text style={{color:"#77A7A7", fontWeight:"bold", fontSize:20}}>Sign up </Text>
+            </View>
+            <View style={{paddingTop:2, paddingLeft:10}}>
+            <Feather
+            name= "chevron-right"
+            size={20}
+            color="#77A7A7"/>
+            </View>
+            
+            </View>
 
-            <TouchableOpacity style={{marginTop:40, width:330, height:50, alignItems:"center",  justifyContent:"center",borderRadius:10, flexDirection:"row", backgroundColor:"#77A7A7"}}>
-                <View style={{paddingRight:10}}>
-                    <FontAwesome
-                    name="facebook"
-                    size={24}
-                    color="black"/>
-                </View>
-                <View >
-                <Text style={{fontSize:20, fontWeight:"bold"}}>Login with Facebook </Text>
-                </View>
-            </TouchableOpacity>
+          
+         
         </View>
     )
 }
