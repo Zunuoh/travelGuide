@@ -4,7 +4,7 @@ import ProfileScreen from '../profile/profile';
 import FeedScreen from '../feed/feed';
 import Easternpage from '../feed/regions/easternScreen';
 import RegionCollection from '../regionCollection/regionCollection';
-import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { FontAwesome, Ionicons, Feather } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +31,7 @@ const BottomStackNavigator = () =>{
           component={RegionCollection}
           options={{
             tabBarIcon: () => (
-              <FontAwesome name="home" color="black" size={24} />
+              <Feather name="menu" color="black" size={24} />
             ),
           }}
         />
@@ -40,7 +40,7 @@ const BottomStackNavigator = () =>{
           component={ProfileScreen}
           options={{
             tabBarIcon: () => (
-              <Ionicons name="logo-buffer" color="black" size={24} />
+              <Feather name="user" color="black" size={24} />
             ),
           }}
         />
@@ -49,7 +49,7 @@ const BottomStackNavigator = () =>{
           component={Easternpage}
           options={{
             tabBarIcon: () => (
-              <Ionicons name="ios-cart" color="black" size={24} />
+              <Feather name="user" color="black" size={24} />
             ),
           }}
         />

@@ -5,7 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import MainStackNavigator from './src/navigation/mainStack';
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from './src/login/login';
-import ProfileScreen from './src/profile/profile';
+import Easternpage from './src/feed/regions/easternScreen';
 import SignupScreen from './src/login/signup';
 import Feedpage from './src/feed/feed';
 
@@ -21,6 +21,7 @@ export default function App() {
       >
         {/* <Stack.Screen name="auth" component={AuthStackNavigator} /> */}
         <Stack.Screen name="core" component={MainStackNavigator} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

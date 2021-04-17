@@ -3,8 +3,8 @@ import { View, Text, Image, ScrollView} from 'react-native';
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { FlatList } from 'react-native-gesture-handler';
 
-const easternList = [{"id":"0", "name":"@theaudrey", "image":require('../../assets/hillburi.jpg')}, {"id":"1", "name":"@kofiau", "image":require('../../assets/senchi.jpg')}, {"id":"2", "name":"@imohemaa", "image":require('../../assets/aburi.jpg')},
-{"id":"3", "name":"@kofiwis", "image":require('../../assets/safari.png')}, {"id":"4", "name":"@likdom", "image":require('../../assets/landsdown.jpeg')}, {"id":"5", "name":"@kwameal", "image":require('../../assets/peduase.jpg')}, {"id":"5", "name":"@kioma", "image":require('../../assets/peduase.jpg')}]
+const easternList = [{"id":"0", "name":"@theaudrey", "image":require('../../assets/eastern/hillburi.jpg')}, {"id":"1", "name":"@kofiau", "image":require('../../assets/eastern/senchi.jpg')}, {"id":"2", "name":"@imohemaa", "image":require('../../assets/eastern/aburi.jpg')},
+{"id":"3", "name":"@kofiwis", "image":require('../../assets/eastern/safari.png')}, {"id":"4", "name":"@likdom", "image":require('../../assets/eastern/landsdown.jpeg')}, {"id":"5", "name":"@kwameal", "image":require('../../assets/eastern/peduase.jpg')}, {"id":"5", "name":"@kioma", "image":require('../../assets/eastern/peduase.jpg')}]
 
 const Feedpage = () =>{
     const [easts, setEast] = useState(easternList)
