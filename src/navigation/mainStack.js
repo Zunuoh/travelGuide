@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import BottomStackNavigator from './bottomStack';
 import Easternpage from '../feed/regions/easternScreen';
 import EditProfile from '../editProfile/editProfile';
+import Centralpage from '../feed/regions/centralScreen';
 const Stack = createStackNavigator();
 
 const MainStackNavigator = () =>{
@@ -16,6 +17,7 @@ const MainStackNavigator = () =>{
         <Stack.Screen name="main" component={BottomStackNavigator} />
         <Stack.Screen name="Easternpage" component={Easternpage}/>
         <Stack.Screen name="EditProfile" component={EditProfile}/>
+        <Stack.Screen name="Centralpage" component={Centralpage}/>
       </Stack.Navigator>
         </Fragment>
     )

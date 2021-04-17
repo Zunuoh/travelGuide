@@ -44,7 +44,7 @@ const BottomStackNavigator = () =>{
             ),
           }}
         />
-        <Tab.Screen
+        {/* <Tab.Screen
           name="Easternpage"
           component={Easternpage}
           options={{
@@ -52,7 +52,7 @@ const BottomStackNavigator = () =>{
               <Feather name="user" color="black" size={24} />
             ),
           }}
-        />
+        /> */}
       </Tab.Navigator>
 
         </Fragment>

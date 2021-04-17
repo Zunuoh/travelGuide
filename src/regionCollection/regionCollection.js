@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import Easternpage from '../feed/regions/easternScreen';
+import Centralpage from '../feed/regions/centralScreen';
 
 const regionList = [{"id":"0", "name":"Greater Accra Region"}, {"id":"1", "name":"Eastern Region"}, {"id":"2", "name":"Central Region"}, {"id":"3", "name":"Ashanti Region"},{"id":"4", "name":"Western Region"},
 {"id":"5", "name":"Western North Region"}, {"id":"6", "name":"Volta  Region"}, {"id":"7", "name":"Oti Region"}, {"id":"8", "name":"Bono Region"}, {"id":"9", "name":"Bono East Region"}, {"id":"10", "name":"Ahafo Region"},
@@ -20,7 +21,7 @@ const RegionCollection =({navigation})=>{
                 <TouchableOpacity style={{height:60, backgroundColor:"#E8E8E8",  borderWidth:.1, border:1, marginTop:20, padding:20, shadowColor: "black",shadowOffset: {width: 0,height: 2},shadowOpacity: 0.3,shadowRadius: 3.84,elevation: 5,}} onPress={()=>{navigation.navigate('Easternpage')}}>
                     <Text style={{fontSize:20}}>Eastern Region</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={{height:60, backgroundColor:"#E8E8E8",  borderWidth:.1, border:1, marginTop:20, padding:20, shadowColor: "black",shadowOffset: {width: 0,height: 2},shadowOpacity: 0.3,shadowRadius: 3.84,elevation: 5,}}>
+                <TouchableOpacity style={{height:60, backgroundColor:"#E8E8E8",  borderWidth:.1, border:1, marginTop:20, padding:20, shadowColor: "black",shadowOffset: {width: 0,height: 2},shadowOpacity: 0.3,shadowRadius: 3.84,elevation: 5,}} onPress={()=>{navigation.navigate('Centralpage')}}>
                     <Text style={{fontSize:20}}>Central Region</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{height:60, backgroundColor:"#E8E8E8",  borderWidth:.1, marginTop:20, padding:20, shadowColor: "black",shadowOffset: {width: 0,height: 2},shadowOpacity: 0.3,shadowRadius: 3.84,elevation: 5,}}>
